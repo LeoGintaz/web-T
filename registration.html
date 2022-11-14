@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registracija</title>
+</head>
+<body>
+    <h2>Registracija</h2>
+    <form id="reg-form">
+        <label for="name">Iveskite Varda:</label>
+        <input type="text" id="name" name="name" placeholder="Vardenis">
+        <label for="surname">Iveskite Pavarde:</label>
+        <input type="text" id="surname" name="surname" placeholder="Pavardenis">
+        <label for="email">Iveskite savo email</label>
+        <input type="email" id="email" name="email" placeholder="emailiukas@email.com">
+        <input type="button" id="reg-form-submit" onclick="goToApp()" value="Registruotis">
+    </form>    
+    <input type="button" onclick="back()" value="Atgal">
+    
+    
+
+
+    <!--script-->
+    <script src="././js/registration.js"></script>
+</body>
+</html>
