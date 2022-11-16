@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Prisijungimas</title>
+    <link rel="stylesheet" href="css/login.css">
 </head>
 <body>
     <form id="log-in">
@@ -12,10 +13,11 @@
         <input type="text" id="name" name="name" placeholder="Vardenis">
         <label for="surname">Iveskite Pavarde:</label>
         <input type="text" id="surname" name="surname" placeholder="Pavardenis">
-        <input type="button" value="Prisijungti">
+        <input type="button" id="log-in-btn" onclick="isRegistered()" value="Prisijungti">
 
     </form>
     <input type="button" onclick="back()" value="Atgal">
+    <div id="messenger"></div>
     
 
 <!--Script-->

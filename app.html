@@ -4,9 +4,66 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    
+    <title>ToDoApp</title>
 </head>
 <body>
-    <h1>Boom</h1>
+    <h1 id="namer"></h1>
+    <div id="namer2"></div>
+    
+      <!--<div id="create_new_todo">Naujas Todo</div>-->
+      <div id="todo_window_header">
+        <div>
+            <a href="#" id="create_new_todo">
+                <span></span>
+                <span></span>
+                <span></span>
+                <span></span>
+                Naujas Todo
+            </a>
+        </div>
+        <div id="logo"></div>
+        <div>
+            <a href="#" id="user_logout">
+                <span></span>
+                <span></span>
+                <span></span>
+                <span></span>
+                Atsijungti
+            </a>
+        </div>
+    </div>
+
+    <div id="div_menu_and_all_todo">
+        <div id="div_create_new_todo" style="display: none;">
+            <form id="form_new_todo">
+                <div>
+                    <label for="Type">Type:</label>
+                    <input type="text" name="Type" id="form_new_todo_type">
+                </div>
+                <div>
+                    <label for="Content">Content:</label>
+                    <input type="text" name="Content" id="form_new_todo_content">
+                </div>
+                <div>
+                    <label for="EndDate">EndDate:</label>
+                    <input type="text" name="EndDate" id="form_new_todo_enddate">
+                </div>
+                <a href="#" id="form_new_todo_submit">Sukurti</a>
+            </form>
+        </div>
+        <div id="div_filters">
+            <label for="filter_only_not_completed" style="width: 100px;">Tik neatlikti:</label>
+            <input type="checkbox" name="filter_only_not_completed" id="filter_only_not_completed" style="width: 18px;">
+            <label for="filter_search">Paieška:</label>
+            <input type="text" name="filter_search" id="filter_search">
+        </div>
+
+        <div id="div_all_todo"></div>
+    </div>
+
+    <div id="messenger"></div>
+    <!--Script-->
+    <script src="./js/app.js"></script>
 </body>
 </html>

@@ -1,0 +1,9 @@
+#messenger>div {
+    display: inline-block;
+    border: solid 1px red;
+    border-radius: 5px;
+    padding: 8px;
+    margin-top: 2px;
+    color: red;
+    white-space: nowrap;
+}
